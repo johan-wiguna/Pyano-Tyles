@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_settings_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_black"
+        android:layout_marginTop="@dimen/iv_back_margin_top"
+        android:layout_marginLeft="@dimen/iv_back_margin_left"/>
+
+    <TextView
+        android:id="@+id/tv_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/settings"
+        android:textSize="@dimen/tv_settings_title"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"
+        android:layout_centerHorizontal="true"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_set_reset"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rl_settings_height"
+            android:layout_below="@id/tv_settings"
+            android:layout_marginHorizontal="@dimen/cv_settings_margin"
+            android:layout_marginBottom="@dimen/rl_settings_margin">
+
+            <RelativeLayout
+                android:id="@+id/rl_set_reset"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/rl_settings_margin">
+
+                <ImageView
+                    android:id="@+id/iv_reset_highscore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_baseline_refresh_28"
+                    android:layout_marginRight="@dimen/iv_settings_content_margin_right"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/reset_highscore"
+                    android:textSize="@dimen/tv_settings_content"
+                    android:textColor="@color/black"
+                    android:layout_toEndOf="@id/iv_reset_highscore"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_set_sound"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rl_settings_height"
+        android:layout_below="@id/cv_set_reset"
+        android:layout_marginHorizontal="@dimen/cv_settings_margin"
+        android:layout_marginBottom="@dimen/rl_settings_margin">
+
+        <RelativeLayout
+            android:id="@+id/rl_set_sound"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/rl_settings_margin">
+
+            <ImageView
+                android:id="@+id/iv_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_speaker_28"
+                android:layout_marginRight="@dimen/iv_settings_content_margin_right"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/sound"
+                android:textSize="@dimen/tv_settings_content"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@id/iv_sound"/>
+
+            <Switch
+                android:id="@+id/switch_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:checked="true"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_set_bg_music"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rl_settings_height"
+        android:layout_below="@id/cv_set_sound"
+        android:layout_marginHorizontal="@dimen/cv_settings_margin"
+        android:layout_marginBottom="@dimen/rl_settings_margin">
+
+        <RelativeLayout
+            android:id="@+id/rl_set_bg_music"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/rl_settings_margin">
+
+            <ImageView
+                android:id="@+id/iv_bg_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_music_note_28"
+                android:layout_marginRight="@dimen/iv_settings_content_margin_right"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/music_preferences"
+                android:textSize="@dimen/tv_settings_content"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@id/iv_bg_music"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_set_language"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rl_settings_height"
+        android:layout_below="@id/cv_set_bg_music"
+        android:layout_marginHorizontal="@dimen/cv_settings_margin"
+        android:layout_marginBottom="@dimen/rl_settings_margin">
+
+        <RelativeLayout
+            android:id="@+id/rl_set_language"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/rl_settings_margin">
+
+            <ImageView
+                android:id="@+id/iv_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_language_28"
+                android:layout_marginRight="@dimen/iv_settings_content_margin_right"/>
+
+            <TextView
+                android:id="@+id/tv_change_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/change_language"
+                android:textSize="@dimen/tv_settings_content"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@id/iv_language"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

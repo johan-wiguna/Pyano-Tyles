@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pyano Tyles</string>
+    <string name="play">Main</string>
+    <string name="settings">Pengaturan</string>
+    <string name="exit">Keluar</string>
+    <string name="diff">Tingkat Kesulitan</string>
+    <string name="your_highscore">Skor tertinggimu:</string>
+    <string name="diff_easy">Easy</string>
+    <string name="diff_medium">Medium</string>
+    <string name="diff_hard">Hard</string>
+    <string name="bonus">Bonus</string>
+    <string name="resume">Lanjutkan</string>
+    <string name="restart">Ulang</string>
+    <string name="main_menu">Menu utama</string>
+    <string name="game_over">Game over!</string>
+    <string name="your_score">Skor anda:</string>
+    <string name="retry">Ulang</string>
+    <string name="paused">Paused</string>
+    <string name="new_high_score">Skor tertinggi baru!</string>
+    <string name="current_score">Skor:</string>
+    <string name="default_score">0</string>
+    <string name="reset_highscore">Reset skor tertinggi</string>
+    <string name="sound">Suara</string>
+    <string name="music_preferences">Preferensi musik</string>
+    <string name="change_language">Ganti bahasa</string>
+    <string name="choose_language">Pilih bahasa</string>
+    <string name="choose_bg_music">Pilih lagu latar</string>
+    <string name="instruction">Instruksi</string>
+    <string name="bonus_instruction">Untuk mendapatkan skor, miringkan smartphone anda sesuai dengan posisi dari tiles-nya.</string>
+</resources>

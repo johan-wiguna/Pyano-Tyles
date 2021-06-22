@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_game_over"
+        android:layout_width="@dimen/cv_game_over_width"
+        android:layout_height="@dimen/cv_game_over_height"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="@dimen/cv_pause_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_over"
+                android:textStyle="bold"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/tv_select_diff"
+                android:textAllCaps="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_score"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/tv_your_score"/>
+
+            <TextView
+                android:id="@+id/tv_game_over_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_score"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/tv_score"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/tv_diff_highscore_margin_right"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/tv_your_score"
+                    android:text="@string/your_highscore"/>
+
+                <TextView
+                    android:id="@+id/tv_current_high_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/tv_your_score"
+                    android:textStyle="bold"
+                    android:text="@string/default_score"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_new_high_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_high_score"
+                android:visibility="invisible"
+                android:textSize="@dimen/tv_new_high_score"
+                android:textColor="@color/purple_700"
+                android:textStyle="bold"
+                android:layout_marginVertical="60dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_game_over_retry"
+                    android:layout_width="@dimen/btn_game_over_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/retry"
+                    android:layout_marginHorizontal="@dimen/btn_game_over_margin"/>
+
+                <Button
+                    android:id="@+id/btn_game_over_menu"
+                    android:layout_width="@dimen/btn_game_over_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_menu"
+                    android:layout_marginHorizontal="@dimen/btn_game_over_margin"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

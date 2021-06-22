@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pyano Tyles</string>
+    <string name="play">Play</string>
+    <string name="settings">Settings</string>
+    <string name="exit">Exit</string>
+    <string name="diff">Select Difficulty</string>
+    <string name="your_highscore">Your high score:</string>
+    <string name="diff_easy">Easy</string>
+    <string name="diff_medium">Medium</string>
+    <string name="diff_hard">Hard</string>
+    <string name="bonus">Bonus</string>
+    <string name="resume">Resume</string>
+    <string name="restart">Restart</string>
+    <string name="main_menu">Main menu</string>
+    <string name="game_over">Game over!</string>
+    <string name="your_score">Your score:</string>
+    <string name="retry">Retry</string>
+    <string name="paused">Paused</string>
+    <string name="new_high_score">New High Score!</string>
+    <string name="current_score">Score:</string>
+    <string name="default_score">0</string>
+    <string name="reset_highscore">Reset high scores</string>
+    <string name="sound">Sound</string>
+    <string name="music_preferences">Music preferences</string>
+    <string name="change_language">Change language</string>
+    <string name="choose_language">Choose language</string>
+    <string name="choose_bg_music">Choose background music</string>
+    <string name="instruction">Instruction</string>
+    <string name="bonus_instruction">To earn score, tilt your smartphone according to the tiles position.</string>
+</resources>
